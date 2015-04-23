@@ -1,8 +1,8 @@
 function deepEqual(a, b) {
   if (a === b) return true;
 
-  if (a == null || typeof a != "object" ||
-      b == null || typeof b != "object")
+  if (a === null || typeof a != "object" ||
+      b === null || typeof b != "object")
     return false;
 
   var propsInA = 0, propsInB = 0;
@@ -16,7 +16,7 @@ function deepEqual(a, b) {
       return false;
   }
 
-  return propsInA == propsInB;
+  return propsInA === propsInB;
 }
 
 var obj = {here: {is: "an"}, object: 2};
