@@ -8,6 +8,8 @@ ancestry.forEach(function(person) {
   byName[person.name] = person;
 });
 
-// Your code here.
+
+
+
 
 // → 31.2
